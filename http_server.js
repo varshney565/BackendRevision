@@ -1,6 +1,7 @@
 const http = require('http');
 const simpleServer = http.createServer((req,res)=>{
     console.log("server started running !!");
+    console.log(req.method);
     switch(req.url) {
         case "/" :
             res.writeHead(200);
